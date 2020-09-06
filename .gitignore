@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Pelican
+pelican-plugins/
+pelican-themes/
+output/
