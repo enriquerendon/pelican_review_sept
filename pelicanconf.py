@@ -1,24 +1,33 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = 'iTrendOn'
-SITENAME = 'EJ Pelican September Review'
-SITEURL = ''
+AUTHOR = 'Enrique Rendon Fuentes'
+SITENAME = "iTrendOn's Site"
+# SITEURL = 'https://enriquerendon.github.io'
+# SITEURL = 'http://www.enriquerendon.com'
 
 PATH = 'content'
+STATIC_PATHS = ['images', 'docs']
 
 TIMEZONE = 'Europe/Madrid'
 
 DEFAULT_LANG = 'en'
 
+# THEME = 'pelican-themes/clean-blog'
+# THEME = 'pelican-themes/buruma'
 THEME = 'pelican-themes/pelican-bootstrap3'
+BOOTSTRAP_THEME = 'flatly'
+PYGMENTS_STYLE = 'friendly'
+
+
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ['i18n_subsites']
+
+PLUGINS = ['i18n_subsites', 'render_math']
+
 I18N_TEMPLATES_LANG = 'en'
 
-#BOOTSTRAP_THEME = 'flatly'
-#PYGMENTS_STYLE = 'friendly'
+
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -28,14 +37,18 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),
-         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('Pelican', 'http://getpelican.com/'),
+         ('Python.org', 'http://python.org/'),
+         ('Jinja2', 'http://jinja.pocoo.org/'),
+         ('freeCodeCamp', 'https://www.freecodecamp.org/'),
+         ('SAP Developers', 'https://developers.sap.com/'),
+         ('openSAP', 'https://open.sap.com/'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('linkedin', 'https://www.linkedin.com/in/erendon/'),
+          ('twitter', 'https://twitter.com/iTrendOn'),
+          ('github', 'https://github.com/enriquerendon'),
+          ('gitlab', 'https://gitlab.com/enrique.rendon'),)
 
 DEFAULT_PAGINATION = 10
 
