@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = 'Enrique Rendon Fuentes'
+AUTHOR = 'Enrique Rendón Fuentes'
 SITENAME = "iTrendOn's Site"
-# SITEURL = 'https://enriquerendon.github.io'
+SITEURL = 'https://enriquerendon.github.io'
 # SITEURL = 'http://www.enriquerendon.com'
 
 PATH = 'content'
@@ -50,7 +50,7 @@ SOCIAL = (('linkedin', 'https://www.linkedin.com/in/erendon/'),
           ('github', 'https://github.com/enriquerendon'),
           ('gitlab', 'https://gitlab.com/enrique.rendon'),)
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 7
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
